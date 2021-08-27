@@ -1,0 +1,5 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+ol,ul{list-style:none;}
+a{text-decoration:none;color:#fff;}
+.center{width:90%;_min-width:1280px;margin:auto;display:flex;}
+.section{width:100%;height:auto;display:flex;align-items:center;justify-content:center;padding:100px 0; background:cadetblue;color:#fff;}
