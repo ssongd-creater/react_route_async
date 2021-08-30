@@ -8,6 +8,7 @@ import About from "./components/About";
 import Movie from "./components/Movie";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
+import Detail from "./components/Detail";
 
 import "./style/App.css"; //style css 작성법
 function App() {
@@ -20,7 +21,8 @@ function App() {
         {/* 즉 '/About'에도 '/'가 있기 때문에 Home과 함께 인식한다 */}
         {/* exact 속성을 사용하면 '/'를 고유하게 인식하여 정확하게 일치하는 경로만 표시한다 */}
         <Route path='/about' component={About} />
-        <Route path='/movie' component={Movie} />
+        <Route path='/movie' exact component={Movie} />
+        <Route path='/movie/:id' component={Detail} />
         {/* <Home />
         <About />
         <Movie /> */}
